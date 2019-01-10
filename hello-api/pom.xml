@@ -17,8 +17,9 @@
             <artifactId>lagom-javadsl-api_${scala.binary.version}</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.typesafe.play</groupId>
-            <artifactId>filters-helpers_2.6.21</artifactId>
+             <groupId>com.typesafe.play</groupId>
+             <artifactId>filters-helpers_2.12</artifactId>
+            <version>2.6.21</version>
         </dependency>
     </dependencies>
     
