@@ -12,7 +12,10 @@ public interface HelloService extends Service {
         // @formatter:off
         return named("hello").withCalls(
                 pathCall("/api/hello/:id", this::hello)
-        ).withAutoAcl(true);
+        ).withAutoAcl(true)
+        .withServiceAcls(
+            ServiceAcl.methodAndPath(Method.OPTIONS, "/api/hello/.*")
+        );
         // @formatter:off
     }
 }
